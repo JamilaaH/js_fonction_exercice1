@@ -39,11 +39,12 @@ console.log(modulo(10,5));
 
 console.log("_____");
 // exo6
-let racine = (a,b) => {
-    return `${a} racine carrée de ${b} = ${Math.sqrt((a * a) + (b * b))} `
+let racine = (a) => {
+    let resultat = a * a;
+    return `la racine carrée de ${a} est ${resultat} `
 }
 
-console.log(racine(3,4));
+console.log(racine(3));
 
 console.log("_____");
 // exo7
@@ -58,7 +59,7 @@ console.log("_____");
 let capitalize = (a) => {
     return `${a.charAt(0).toUpperCase() + a.slice(1) .toLowerCase()}`
 }
-console.log(capitalize("JaMiLA"));
+console.log(capitalize("je vais Aller Me promenEr"));
 
 console.log("_____");
 // exo9
@@ -81,6 +82,6 @@ let calcul2 = (nb1,op,nb2) => {
     }
 }
 
-let operation = calcul2(2,"%",3);
+let operation = calcul2(2,"*",3);
 
 console.log(operation);
